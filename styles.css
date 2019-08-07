@@ -1,0 +1,29 @@
+:root {
+  --columnNum: 16;
+}
+
+html, body {
+  background: gray;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.resetBtn {
+  margin: 20px auto 10px auto;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+  grid-template-columns: repeat(var(--columnNum), 1fr);
+  grid-template-rows: repeat(var(--columnNum), 1fr);
+}
+
+.square {
+  background: #dfdfdf;
+}
